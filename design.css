@@ -1,0 +1,155 @@
+* {
+    font-family: "Outfit";
+}
+
+p{
+    font-size: 18px;
+}
+
+body{
+    background-color:hsl(217, 54%, 11%) ;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    max-width: 45vh;
+    min-width: 45vh;
+    padding: 3vh;
+    border-radius: 5%;
+}
+
+.eq-container{
+    position: relative;
+}
+#eq-pic{
+    width: 45vh;
+    height: 45vh;
+    border-radius: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#view{
+    position: absolute;
+    top: 43%;
+    left: 43%;
+    text-align: center;    
+}
+
+.eq-container:hover .overlay{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#view:hover{
+    cursor: pointer;
+}
+
+.overlay{
+    position: absolute;
+    width: 45vh;
+    height: 45vh;
+    top: 0 ;
+    bottom: 0;
+    border-radius: 4%;
+    opacity: 0;
+    transition: 1.3s ease;
+    border-radius: 4%;
+    background-color:hsl(215, 51%, 70%);
+}
+
+.eth-text{
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+h3{
+    color:hsl(0, 0%, 100%)
+}
+
+.card-desc, .creator{
+    color: hsl(215, 51%, 70%);
+}
+
+a:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+hr{
+    margin: auto;
+    color: hsl(215, 32%, 27%);
+    margin-bottom: 2vh;
+}
+
+.desc-num{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.desc-num>p{
+    flex-basis: 35%;
+    font-weight: 400;
+}
+
+.desc-num img{
+    padding-right: 1vh;
+}
+
+.desc-num p:last-child{
+    padding-left: 10vh;
+}
+
+.creator{
+    display: flex;
+    align-items: center;
+    justify-content: center;        
+}
+
+a{
+    color:hsl(0, 0%, 100%)
+  
+}
+
+.creator p{
+    padding-left: 5vh;
+}
+
+#creator-pic{
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 100%;
+    width: 5%;
+    height: 5%;
+    margin:unset;
+    padding: unset;
+    flex-basis: 13%;
+
+}
+
+@media screen and (max-width:375px){
+    #eq-pic{
+        max-width: 40vh;
+        max-height: 40vh;
+    }
+
+    .card{
+        max-width: 40vh;
+        min-width: 40vh;
+    }
+
+    .desc-num{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:1440px){
+
+
+}
